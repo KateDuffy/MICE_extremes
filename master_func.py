@@ -194,7 +194,7 @@ def GEV_combined(model_list):
                 maxima1 = maximum.sel(lat = lat1,lon = lon1)
                 maxima_vals = (eval("maxima1."+"pr"+".values"))
                 maxima_vals = maxima_vals[~np.isnan(maxima_vals)]
-                maxima_vals = maxima_vals[maxima_vals<400]
+                maxima_vals = maxima_vals[maxima_vals<700]
                 maxima_vals = list(maxima_vals)
 
 
